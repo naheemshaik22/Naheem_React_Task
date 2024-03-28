@@ -541,3 +541,58 @@ body {
   font-size: 1.2rem;
   text-align: center;
 }
+
+/* Common styles for all screen sizes */
+/* You can define styles for smaller screens first */
+/* Then gradually enhance them for larger screens */
+
+/* Styles for screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 767px) {
+  /* Adjustments for smaller screens */
+  #home-container {
+      /* Example styles */
+      padding: 20px;
+  }
+  .animation-cards {
+      /* Example styles */
+      padding: 20px;
+  }
+  .card-section {
+      /* Example styles */
+      margin-bottom: 20px;
+  }
+}
+
+/* Styles for screens between 768px and 1023px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Adjustments for medium-sized screens */
+  #home-container {
+      /* Example styles */
+      padding: 30px;
+  }
+  .animation-cards {
+      /* Example styles */
+      padding: 30px;
+  }
+  .card-section {
+      /* Example styles */
+      margin-bottom: 30px;
+  }
+}
+
+/* Styles for screens larger than 1023px (e.g., desktops) */
+@media (min-width: 1024px) {
+  /* Adjustments for larger screens */
+  #home-container {
+      /* Example styles */
+      padding: 40px;
+  }
+  .animation-cards {
+      /* Example styles */
+      padding: 40px;
+  }
+  .card-section {
+      /* Example styles */
+      margin-bottom: 40px;
+  }
+}

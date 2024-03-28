@@ -115,7 +115,7 @@ export const todoApiFactory = (token?: string): ITodoApi => {
                 password,
                 confirmPassword,
             };
-            const response = await fetch(url('v1/users'), {
+            const response = await fetch(url('v1/users/Create'), {
                 method: 'POST',
                 headers: headers(false),
                 body: JSON.stringify(bodyData),

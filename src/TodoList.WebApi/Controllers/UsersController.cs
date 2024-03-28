@@ -42,7 +42,8 @@ namespace TodoList.WebApi.Controllers
             return Ok(userViewModel);
         }
 
-        [HttpPost]
+        [HttpPost("Create")]
+         [AllowAnonymous]
         public async Task<ActionResult<UserViewModel>> Create(CreateUserViewModel model)
         {
             if (model.Password != model.ConfirmPassword) return BadRequest();

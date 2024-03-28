@@ -14,7 +14,11 @@
     background-color: white;
     padding: 15px 0;
 }
-
+.logout-button {
+    margin-bottom: 9px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
 .todolist-title-container > img {
     width: 24px;
     height: 24px;

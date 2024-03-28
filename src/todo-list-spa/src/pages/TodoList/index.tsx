@@ -78,13 +78,22 @@ export const TodoList: React.FC = () => {
             history.push('/login');
         }
     };
+    const handleLogout = () => {
+        window.sessionStorage.removeItem('token'); // Clear token from sessionStorage
+        history.push('/'); // Redirect to login page after logout
+    };
 
     return (
         <>
             <Navbar></Navbar>
             <div className="todolist-page">
+            <button className="logout-button" onClick={handleLogout}>
+                        {/* <img src={logoutIcon} alt="Logout" /> */}
+                        Logout
+                    </button>
                 <header className="todolist-title-container">
                     <img src={logo} alt="logo" /> <strong>Todo List</strong>
+                   
                 </header>
                 <main className="todo-list-main">
                     <ul>
